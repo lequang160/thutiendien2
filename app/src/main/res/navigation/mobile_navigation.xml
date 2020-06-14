@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_order">
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.xep.thutiendien.fragment.order.OrderFragment"
+        android:label="Danh sách chưa thu"
+        tools:layout="@layout/fragment_order">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_clients"
+        android:name="com.xep.thutiendien.fragment.clients.ClientFragment"
+        android:label="Danh sách khách hàng"
+        tools:layout="@layout/fragment_client" />
+
+    <fragment
+        android:id="@+id/nav_order_paid"
+        android:name="com.xep.thutiendien.fragment.order_paid.OrderPaidFragment"
+        android:label="Danh sách đã thu"
+        tools:layout="@layout/fragment_order_paid" />
+
+    <fragment
+        android:id="@+id/nav_order_cancel"
+        android:name="com.xep.thutiendien.fragment.OrderCancelFragment"
+        android:label="Danh sách đã hủy"
+        tools:layout="@layout/order_cancel_fragment" />
+</navigation>
